@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Tabs from './tabs';
+import Clock from './clock';
 
 const tab = [{title: "one", content: "I am the first" },
               {title: "two", content: "I am the two"},
@@ -13,7 +14,12 @@ class Root extends React.Component {
 
 
   render() {
-    return <Tabs tabs={tab}/>;
+    return (
+      <div>
+        <Tabs tabs={tab}/>
+        <Clock />
+      </div>
+      );
   }
 }
 
