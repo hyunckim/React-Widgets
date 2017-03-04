@@ -16,6 +16,11 @@ ul {
   border: 1px solid black;
 }
 
+.tabs li:hover{
+  background-color: yellow;
+  cursor: pointer; 
+}
+
 .content {
   width: 110px;
   border: 10px solid green;
